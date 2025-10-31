@@ -74,31 +74,31 @@
     </section>
 
     
-    <!-- SECCIÓN NOSOTROS -->
+    <!-- SECCIÓN NOSOTROS - Se mantiene en columna en móvil, pero con espaciado optimizado -->
     <section id="nosotros" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2 w-full">
+            <div class="flex flex-col md:flex-row items-center gap-8 sm:gap-12">
+                <div class="md:w-1/2 w-full order-2 md:order-1"> <!-- Orden 2 en móvil, Orden 1 en desktop: Texto después de imagen en móvil (o viceversa) -->
                     <span class="text-sm font-semibold uppercase tracking-wider text-primary">Nuestra Promesa</span>
-                    <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-6">
+                    <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-2 mb-4">
                         El Pet Spa que tus mascotas merecen.
                     </h3>
-                    <p class="text-gray-600 mb-4 text-lg">
+                    <p class="text-gray-600 mb-3 text-base sm:text-lg">
                         En Mr. Caninos Pets Care, entendemos que tu mascota es parte de tu familia. Por eso, ofrecemos un ambiente seguro, relajante y lleno de cariño para cada uno de nuestros clientes de cuatro patas.
                     </p>
-                    <p class="text-gray-600 text-lg">
+                    <p class="text-gray-600 text-base sm:text-lg">
                         Utilizamos productos de la más alta calidad y técnicas profesionales para garantizar no solo que se vean bien, sino que se sientan increíbles. ¡Visítanos en Cl. 8ª A Sur # 23A-03, y compruébalo!
                     </p>
-                    <div class="mt-8 flex items-center space-x-4">
-                        <span role="img" aria-label="Corazón" class="text-4xl text-red-500">❤️</span>
-                        <p class="text-xl font-semibold text-gray-700">¡Cuidado profesional y amor incondicional!</p>
+                    <div class="mt-6 flex items-center space-x-3">
+                        <span role="img" aria-label="Corazón" class="text-3xl text-red-500">❤️</span>
+                        <p class="text-lg font-semibold text-gray-700">¡Cuidado profesional y amor incondicional!</p>
                     </div>
                 </div>
-                <div class="md:w-1/2 w-full">
+                <div class="md:w-1/2 w-full order-1 md:order-2"> <!-- Orden 1 en móvil, Orden 2 en desktop: Imagen antes de texto en móvil -->
                     
-                    <div class="bg-gray-100 p-6 rounded-3xl shadow-xl border-4 border-primary/30">
-                        <p class="text-center text-xl text-gray-500 italic">
+                    <div class="bg-gray-100 p-4 sm:p-6 rounded-3xl shadow-xl border-4 border-primary/30">
+                        <p class="text-center text-base sm:text-xl text-gray-500 italic">
                              Un momento de relajación en nuestro spa.
                         </p>
                         
@@ -110,47 +110,47 @@
     </section>
 
     
-    <!-- SECCIÓN SERVICIOS -->
+    <!-- SECCIÓN SERVICIOS - CAMBIO: grid-cols-2 en móvil -->
     <section id="servicios" class="py-16 md:py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Nuestros Servicios Exclusivos</h3>
-            <p class="text-lg sm:text-xl text-gray-600 mb-12">Todo lo que tu mascota necesita para verse y sentirse radiante.</p>
+            <p class="text-lg sm:text-xl text-gray-600 mb-10">Todo lo que tu mascota necesita para verse y sentirse radiante.</p>
 
             
-            <!-- TARJETAS DE SERVICIOS -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- CAMBIO AQUÍ: grid-cols-2 en mobile (por defecto) y lg:grid-cols-4 en pantallas grandes -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
 
                 
-                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                    <span role="img" aria-label="Ducha" class="text-4xl sm:text-5xl mb-4 block">🛁</span>
-                    <h4 class="text-xl sm:text-2xl font-semibold mb-3">Baño y Secado Premium</h4>
-                    <p class="text-gray-600 text-sm sm:text-base">Baños relajantes con productos hipoalergénicos, limpieza de oídos y corte de uñas.</p>
+                <div class="bg-white p-4 sm:p-6 rounded-xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                    <span role="img" aria-label="Ducha" class="text-3xl sm:text-5xl mb-3 block">🛁</span>
+                    <h4 class="text-base sm:text-xl font-semibold mb-2">Baño y Secado Premium</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Baños relajantes con productos hipoalergénicos, limpieza de oídos y corte de uñas.</p>
                 </div>
 
                 
-                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                    <span role="img" aria-label="Tijeras" class="text-4xl sm:text-5xl mb-4 block">✂️</span>
-                    <h4 class="text-xl sm:text-2xl font-semibold mb-3">Peluquería y Estilismo</h4>
-                    <p class="text-gray-600 text-sm sm:text-base">Cortes a la moda, deslanado, y tratamientos especiales para un pelaje espectacular.</p>
+                <div class="bg-white p-4 sm:p-6 rounded-xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                    <span role="img" aria-label="Tijeras" class="text-3xl sm:text-5xl mb-3 block">✂️</span>
+                    <h4 class="text-base sm:text-xl font-semibold mb-2">Peluquería y Estilismo</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Cortes a la moda, deslanado, y tratamientos especiales para un pelaje espectacular.</p>
                 </div>
 
                 
-                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                    <span role="img" aria-label="Masaje" class="text-4xl sm:text-5xl mb-4 block">💆‍♀️</span>
-                    <h4 class="text-xl sm:text-2xl font-semibold mb-3">Relajación y Masajes</h4>
-                    <p class="text-gray-600 text-sm sm:text-base">Sesiones de masajes terapéuticos para reducir el estrés y mejorar la circulación.</p>
+                <div class="bg-white p-4 sm:p-6 rounded-xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                    <span role="img" aria-label="Masaje" class="text-3xl sm:text-5xl mb-3 block">💆‍♀️</span>
+                    <h4 class="text-base sm:text-xl font-semibold mb-2">Relajación y Masajes</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Sesiones de masajes terapéuticos para reducir el estrés y mejorar la circulación.</p>
                 </div>
 
                 
-                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                    <span role="img" aria-label="Diente" class="text-4xl sm:text-5xl mb-4 block">🦷</span>
-                    <h4 class="text-xl sm:text-2xl font-semibold mb-3">Higiene Dental</h4>
-                    <p class="text-gray-600 text-sm sm:text-base">Cepillado profesional y revisión para mantener una sonrisa sana y fresca.</p>
+                <div class="bg-white p-4 sm:p-6 rounded-xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                    <span role="img" aria-label="Diente" class="text-3xl sm:text-5xl mb-3 block">🦷</span>
+                    <h4 class="text-base sm:text-xl font-semibold mb-2">Higiene Dental</h4>
+                    <p class="text-gray-600 text-xs sm:text-sm">Cepillado profesional y revisión para mantener una sonrisa sana y fresca.</p>
                 </div>
             </div>
             
             
-            <div class="mt-16">
+            <div class="mt-12 sm:mt-16">
                 <a href="https://petspa-frontend.vercel.app" target="_blank" class="inline-flex items-center color-primary color-primary-hover text-white text-lg sm:text-xl font-bold px-6 sm:px-8 py-3 rounded-full shadow-lg transition duration-300">
                     Agenda tu Cita ahora
                     <span role="img" aria-label="Flecha" class="ml-2">→</span>
@@ -163,7 +163,7 @@
     <!-- SECCIÓN CONTACTO -->
     <section id="contacto" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
+            <div class="text-center mb-10">
                 <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Encuéntranos en Jamundí, Cali</h3>
                 <p class="text-lg sm:text-xl text-gray-600">Estamos listos para recibir a tu mejor amigo. ¡Te esperamos!</p>
             </div>
@@ -225,7 +225,7 @@
     </footer>
 
     
-    <!-- Script de smooth scrolling (se mantiene) -->
+    <!-- Script de smooth scrolling -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
