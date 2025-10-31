@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Caninos Pets Care - Jamundí, Cali</title>
-    <!-- Carga de Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fuente Inter (Estándar de diseño moderno) -->
-    <style>
+    <!-- Carga de Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter (Estándar de diseño moderno) --><style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
@@ -23,24 +21,24 @@
         .text-primary {
             color: #4CAF50;
         }
-        /* Sutil patrón de fondo de pata para la sección hero */
+        /* Patrón de fondo de pata para la sección hero - RESTAURADO Y MEJORADO */
         .paw-pattern-bg {
-            background-color: #e0f7fa; /* Azul muy claro */
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cpath fill='%23c8e6c9' d='M25 40c-6 0-10 4-10 10s4 10 10 10 10-4 10-10-4-10-10-10zM50 30c-5 0-8 4-8 9s3 9 8 9 8-4 8-9-3-9-8-9zM75 40c-6 0-10 4-10 10s4 10 10 10 10-4 10-10-4-10-10-10zM50 50c-7 0-13 6-13 13s6 13 13 13 13-6 13-13-6-13-13-13z'/%3E%3C/svg%3E");
-            background-size: 50px 50px;
+            background-color: #e8f5e9; /* Un verde muy claro, tipo menta para las huellas */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23d0f0c0' d='M25 35c-7 0-12 5-12 12s5 12 12 12 12-5 12-12-5-12-12-12zM50 25c-6 0-10 5-10 11s4 11 10 11 10-5 10-11-4-11-10-11zM75 35c-7 0-12 5-12 12s5 12 12 12 12-5 12-12-5-12-12-12zM50 45c-8 0-15 7-15 15s7 15 15 15 15-7 15-15-7-15-15-15z'/%3E%3C/svg%3E");
+            background-size: 80px 80px; /* Tamaño un poco más grande para que se noten mejor */
+            background-repeat: repeat; /* Asegura que cubra todo el fondo */
+            background-position: center center; /* Centra el patrón */
         }
     </style>
 </head>
 <body class="text-gray-800 antialiased">
 
-    <!-- Encabezado y Navegación -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <!-- Encabezado y Navegación --><header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-extrabold text-primary flex items-center">
                 <span role="img" aria-label="Pata de perro" class="mr-2 text-4xl">🐾</span>
                 Mr. Caninos Pets Care
             </h1>
-            <!-- Se eliminan los enlaces de navegación por petición del usuario para dejar solo el botón de agenda -->
             
             <a href="https://petspa-frontend.vercel.app" target="_blank" class="color-primary color-primary-hover text-white px-6 py-2 rounded-full font-semibold shadow-lg transition duration-300 transform hover:scale-105">
                 Agenda tu Cita
@@ -48,8 +46,7 @@
         </div>
     </header>
 
-    <!-- Sección Principal (Hero) -->
-    <section id="inicio" class="paw-pattern-bg py-20 md:py-32">
+    <!-- Sección Principal (Hero) - Con las huellas restauradas --><section id="inicio" class="paw-pattern-bg py-20 md:py-32">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4 leading-tight">
                 Donde el amor y el cuidado <br class="hidden sm:block"> se encuentran.
@@ -57,19 +54,17 @@
             <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
                 Mr. Caninos ofrece el mejor spa y peluquería para tus compañeros peludos en Jamundí, Cali.
             </p>
-            <!-- Botón principal de CTA (Centralizado) -->
-            <a href="https://petspa-frontend.vercel.app" target="_blank" class="inline-flex items-center justify-center color-primary color-primary-hover text-white text-2xl font-bold px-10 py-4 rounded-xl shadow-2xl shadow-green-400/50 transition duration-500 transform hover:scale-105 hover:shadow-green-500/70">
+            <!-- Botón principal de CTA (Centralizado) --><a href="https://petspa-frontend.vercel.app" target="_blank" class="inline-flex items-center justify-center color-primary color-primary-hover text-white text-2xl font-bold px-10 py-4 rounded-xl shadow-2xl shadow-green-400/50 transition duration-500 transform hover:scale-105 hover:shadow-green-500/70">
                 <span role="img" aria-label="Calendario" class="mr-3">🗓️</span>
                 Agenda tu Cita
             </a>
         </div>
     </section>
 
-    <!-- Sección Nosotros/Información -->
-    <section id="nosotros" class="py-16 md:py-24 bg-white">
+    <!-- Sección Nosotros/Información --><section id="nosotros" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
+            <!-- Usa flex-col para apilar en móvil, y md:flex-row para dividir en escritorio --><div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 w-full">
                     <span class="text-sm font-semibold uppercase tracking-wider text-primary">Nuestra Promesa</span>
                     <h3 class="text-4xl font-bold text-gray-900 mt-2 mb-6">
                         El Pet Spa que tus mascotas merecen.
@@ -86,58 +81,50 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 w-full">
-                    <!-- Placeholder de imagen grande y redondeada -->
-                    <div class="bg-gray-100 p-6 rounded-3xl shadow-xl border-4 border-primary/30">
+                    <!-- Placeholder de imagen grande y redondeada --><div class="bg-gray-100 p-6 rounded-3xl shadow-xl border-4 border-primary/30">
                         <p class="text-center text-xl text-gray-500 italic">
-                            
+                             Un momento de relajación en nuestro spa.
                         </p>
-                        <img src="https://st2.depositphotos.com/1146092/6144/i/450/depositphotos_61446413-stock-photo-wellness-dog.jpg" onerror="this.onerror=null; this.src='https://st2.depositphotos.com/1146092/6144/i/450/depositphotos_61446413-stock-photo-wellness-dog.jpg';" alt="Imagen de un perro siendo cuidado" class="w-full h-auto rounded-2xl object-cover mt-4">
+                        <!-- Imagen con w-full para asegurar que ocupa todo el espacio en el contenedor --><img src="https://st2.depositphotos.com/1146092/6144/i/450/depositphotos_61446413-stock-photo-wellness-dog.jpg" onerror="this.onerror=null; this.src='https://st2.depositphotos.com/1146092/6144/i/450/depositphotos_61446413-stock-photo-wellness-dog.jpg';" alt="Imagen de un perro siendo cuidado" class="w-full h-auto rounded-2xl object-cover mt-4">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Servicios -->
-    <section id="servicios" class="py-16 md:py-24 bg-gray-50">
+    <!-- Sección Servicios --><section id="servicios" class="py-16 md:py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h3 class="text-4xl font-bold text-gray-900 mb-4">Nuestros Servicios Exclusivos</h3>
             <p class="text-xl text-gray-600 mb-12">Todo lo que tu mascota necesita para verse y sentirse radiante.</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Responsividad: 1 columna en móvil, 2 en tablet, 4 en escritorio --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <!-- Servicio 1: Baño y Secado -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <!-- Servicio 1: Baño y Secado --><div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
                     <span role="img" aria-label="Ducha" class="text-5xl mb-4 block">🛁</span>
                     <h4 class="text-2xl font-semibold mb-3">Baño y Secado Premium</h4>
                     <p class="text-gray-600">Baños relajantes con productos hipoalergénicos, limpieza de oídos y corte de uñas.</p>
                 </div>
 
-                <!-- Servicio 2: Peluquería -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <!-- Servicio 2: Peluquería --><div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
                     <span role="img" aria-label="Tijeras" class="text-5xl mb-4 block">✂️</span>
                     <h4 class="text-2xl font-semibold mb-3">Peluquería y Estilismo</h4>
                     <p class="text-gray-600">Cortes a la moda, deslanado, y tratamientos especiales para un pelaje espectacular.</p>
                 </div>
 
-                <!-- Servicio 3: Masajes -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <!-- Servicio 3: Masajes --><div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
                     <span role="img" aria-label="Masaje" class="text-5xl mb-4 block">💆‍♀️</span>
                     <h4 class="text-2xl font-semibold mb-3">Relajación y Masajes</h4>
                     <p class="text-gray-600">Sesiones de masajes terapéuticos para reducir el estrés y mejorar la circulación.</p>
                 </div>
 
-                <!-- Servicio 4: Cuidado Dental -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <!-- Servicio 4: Cuidado Dental --><div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-primary transition duration-300 hover:shadow-xl hover:translate-y-[-5px]">
                     <span role="img" aria-label="Diente" class="text-5xl mb-4 block">🦷</span>
                     <h4 class="text-2xl font-semibold mb-3">Higiene Dental</h4>
                     <p class="text-gray-600">Cepillado profesional y revisión para mantener una sonrisa sana y fresca.</p>
                 </div>
             </div>
             
-            <!-- CTA Section 2 -->
-            <div class="mt-16">
-                <!-- Se eliminó "Ver Precios" del texto del botón -->
+            <!-- CTA Section 2 --><div class="mt-16">
                 <a href="https://petspa-frontend.vercel.app" target="_blank" class="inline-flex items-center color-primary color-primary-hover text-white text-xl font-bold px-8 py-3 rounded-full shadow-lg transition duration-300">
                     Agenda tu Cita ahora
                     <span role="img" aria-label="Flecha" class="ml-2">→</span>
@@ -146,16 +133,14 @@
         </div>
     </section>
 
-    <!-- Sección Contacto y Ubicación (Mapa) -->
-    <section id="contacto" class="py-16 md:py-24 bg-white">
+    <!-- Sección Contacto y Ubicación (Mapa) --><section id="contacto" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h3 class="text-4xl font-bold text-gray-900 mb-4">Encuéntranos en Jamundí, Cali</h3>
                 <p class="text-xl text-gray-600">Estamos listos para recibir a tu mejor amigo. ¡Te esperamos!</p>
             </div>
-            <div class="flex flex-col lg:flex-row gap-12">
-                <!-- Información de Contacto -->
-                <div class="lg:w-1/3 p-8 bg-gray-50 rounded-2xl shadow-lg">
+            <!-- Responsividad: flex-col en móvil, lg:flex-row en escritorio --><div class="flex flex-col lg:flex-row gap-12">
+                <!-- Información de Contacto (w-full asegura que ocupa todo el ancho en móvil) --><div class="lg:w-1/3 w-full p-8 bg-gray-50 rounded-2xl shadow-lg">
                     <div class="mb-6">
                         <h4 class="text-2xl font-semibold text-primary mb-2">Ubicación</h4>
                         <p class="text-lg text-gray-700">
@@ -166,7 +151,6 @@
                     <div class="mb-6">
                         <h4 class="text-2xl font-semibold text-primary mb-2">Horario</h4>
                         <ul class="text-lg text-gray-700 space-y-1">
-                            <!-- Horario actualizado a 10:00 AM - 7:00 PM -->
                             <li>Lunes a Sabados: 10:00 AM - 7:00 PM</li>
                             <li>Domingos: Cerrado</li>
                         </ul>
@@ -174,14 +158,11 @@
                     <div>
                         <h4 class="text-2xl font-semibold text-primary mb-2">Contacto</h4>
                         <p class="text-lg text-gray-700">
-                            <!-- Número de teléfono actualizado -->
                             Teléfono: +57 314 8586282<br>
                         </p>
                     </div>
                 </div>
-                <!-- Mapa de Ubicación -->
-                <div class="lg:w-2/3 w-full h-96 lg:h-auto rounded-2xl shadow-xl overflow-hidden">
-                    <!-- Mapa actualizado usando la dirección del negocio en el parámetro 'q' para que Google Maps resalte el lugar. -->
+                <!-- Mapa de Ubicación (h-96 le da una altura fija y w-full ocupa el ancho) --><div class="lg:w-2/3 w-full h-96 rounded-2xl shadow-xl overflow-hidden">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.241513264024!2d-76.541094!3d3.353457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6e0c7a5f573%3A0xc34a1773e35a11c8!2sCl.%208%C2%AA%20A%20Sur%20%2323A-03%2C%20Jamund%C3%AD%2C%20Valle%20del%20Cauca%2C%20Colombia!5e0!3m2!1ses!2sus!4v1700000000000!5m2!1ses!2sus"
                         width="100%" 
@@ -196,28 +177,23 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <!-- Footer --><footer class="bg-gray-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-lg mb-4">
                 © 2025 Mr. Caninos Pets Care. Todos los derechos reservados.
             </p>
-            <div class="flex justify-center space-x-6">
-                <!-- Íconos de redes sociales como placeholders -->
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300"></a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300"></a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300"></a>
+            <!-- Íconos de redes sociales como placeholders (emojis) --><div class="flex justify-center space-x-6 text-2xl">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300" title="Instagram">📸</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300" title="Facebook">📘</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300" title="WhatsApp">💬</a>
             </div>
         </div>
     </footer>
 
-    <!-- Script para desplazamiento suave (opcional, mejora la experiencia) -->
-    <script>
+    <!-- Script para desplazamiento suave (opcional, mejora la experiencia) --><script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                // Eliminamos el desplazamiento suave ya que se quitaron los anclas de navegación,
-                // pero lo dejo por si en el futuro se añaden más secciones internas.
                 const targetId = this.getAttribute('href');
                 if (targetId !== '#') {
                     document.querySelector(targetId).scrollIntoView({
